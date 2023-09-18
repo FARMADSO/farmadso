@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 150vh;
+
+}
+.cabezera{
+    height: 13%;
+}
+.container-main{
+    height: 80%;
+}
+.section-publicidad{
+    height: 30%;
+    display: flex;
+}
+.slider{
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.caja-slider{
+    width: 84%;
+   margin-right: 25px;
+    overflow: hidden;
+
+}
+.caja-slider ul{
+    width: 400%;
+    padding: 0;
+    display: flex;
+    animation: slider 10s infinite  ease-in-out;
+}
+.caja-slider li{
+    width:890px;
+    list-style: none;
+
+}
+.caja-slider img{
+    width: 100%;
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    
+}
+
+.text{
+    width: 30%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.text article{
+   border-radius: 3px;
+    display: flex;
+    width: 66%;
+    height: 90%;
+    color: aliceblue;
+    background-color: #2d57a8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.section-filtros{
+    color: red;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.filter {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 20%;
+    border-radius: 3px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.section-articulos{
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    overflow-y: scroll;
+
+}
+.section-articulos::-webkit-scrollbar {
+    width: 10px; 
+}
+.botonn{
+    margin-right: 8px;
+    width: 10%;
+    background-color: transparent;
+    border: 2px solid #5c0017;
+    font-size: 11px;
+    color: #5c0017;
+    border-radius: 5px;
+    font-weight: 850;
+    cursor: pointer;
+}
+.id-card-orientation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+    height: auto;
+    gap: 10px;
+    justify-content: space-around;
+ }
+ 
+ .card-contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25%;
+    box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.5);
+    height: auto;
+
+ }
+ 
+ .card-contenedor .card-imagen-cd{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 11rem;
+    border-radius: 5px 5px 0px 0px;
+    background: linear-gradient(45deg, #6EB5E1, #86E4F6, #6EB5E1);
+ }
+ 
+ .card-contenedor .card-imagen-cd img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px 5px 0px 0px;
+ }
+ 
+ .card-aumentar{
+    position: absolute;
+
+ }
+ 
+ .car-imagen-sub{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 0.4rem 1.3rem;
+    font-size: 14px;
+    background-color: #d40237;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid;
+ }
+ 
+ .car-imagen-sub2{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+    font-size: 14px;
+    background-color: #d40237;
+    color: white;
+ }
+ 
+ 
+ 
+ .card-text-cd h3{
+    text-align: center;
+    color: #500b1c;
+    font-size: 1.9em;
+ }
+ 
+ .card-text-cd p{
+    font-size: 13.8px;
+    text-align: center;
+    padding: 0.2rem 1.3rem;
+    margin-top: 5px;
+ }
+ 
+ .card-deco-cd{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.4rem 5rem;
+ }
+ 
+ .card-deco-cd div{
+    width: 21%;
+    height: 2rem;
+    border-radius: 50%;
+ }
+ 
+ .s1{
+    background-color: #6D93C9;
+ }
+ .s2{
+    background-color: #33A892;
+ }
+ .s3{
+    background-color: #B5DDCA;
+ }
+ 
+ .card-precio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    font-size: 1.5em;
+    font-weight: 560;
+    color: #5c0017;
+    padding: 0.2rem 0rem;
+ }
+ 
+ .card-agregar-cd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 0rem 1.5rem 0rem;
+ }
+ 
+ .card-agregar-cd button{
+    margin-right: 8px;
+    width: 45%;
+    height: 2.7rem;
+    background-color: transparent;
+    border: 2px solid #5c0017;
+    font-size: 11px;
+    color: #5c0017;
+    border-radius: 5px;
+    font-weight: 850;
+    cursor: pointer;
+ }
+ 
+ .card-agregar-cd button:hover{
+    background-color: #5c0017;
+    color: white;
+ }
+ @media screen and (max-width: 350px){
+ 
+   .text article{
+      height: 40%;
+   
+     
+  }
+ }
+ 
+ @media screen and (max-width: 650px){
+    .text article{
+        width: 90%;
+        height: 70%;
+        font-size: 13px;
+       
+    }
+    .id-card-orientation{
+       align-items: center;
+       justify-content: center;
+    }
+    .card-contenedor{
+       width: 90%;
+       height: 32rem;
+       margin: 0;
+       margin-top: 15px;
+    }
+    .card-detalles h3{
+       margin-top: 15px;
+       font-size: 25px;
+    }
+    .card-deco-cd div{
+       margin-top: 12px;
+       height: 2.5rem;
+    }
+    .card-precio{
+       margin-top: 12px;
+    }
+ }
+ 
+ 
+ @media screen and (min-width: 651px) and (max-width: 950px){
+    .text article{
+        width: 70%;
+       
+    }
+    .id-card-orientation{
+       align-items: center;
+       justify-content: space-around;
+    }
+    .card-contenedor{
+       width: 30%;
+       height: 32rem;
+       margin: 0;
+       margin-right: 5px;
+       margin-top: 15px;
+    }
+ }
+ 
+ 
+ @media screen and (min-width: 1550px){
+    .card-contenedor{
+       width: 29%;
+       height: 30rem;
+       margin: 0;
+       margin-right: 15px;
+       margin-top: 15px;
+    }
+    .card-deco-cd{
+       margin-top: 15px;
+       padding: 0rem 8rem;
+    }
+    .card-deco-cd div{
+       height: 2.7rem;
+    }
+    .card-precio{
+       margin-top: 12px;
+       margin-bottom: 12px;
+    }
+ }
+ .whatsapp-button {
+   display: flex;
+   position: fixed;
+   z-index: 1;
+   top: 85%;
+   left: 0.3%;
+   background-color: green;
+   padding: 10px;
+   border-radius: 100%;
+   width: 1.5em;
+   height: 1.5em;
+   align-items: center;
+   justify-content: center;
+}
+
+.whatsapp-button img {
+   width: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+   height: 30px;
+}

@@ -1,0 +1,478 @@
+/* Estilos generales */
+.body{
+  margin: 0%;
+  padding: 0%;
+  background-color: #B5DDCA;
+}
+.mainDescripcionProducto {
+    margin: 0 auto;
+    padding: 0%;
+    font-family: sans-serif;
+    color: #6D93C9;
+    background-color: #B5DDCA;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  
+    
+   
+}
+.contenedorDosSeccionesPrincipales{
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Estilos del producto */
+.conte-descripcion-comentario{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+.contenedorDescriccionProducto{
+    margin-top: 3%; /* Margen superior de 20 píxeles */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+    display: flex;
+    flex-direction: column;
+   
+   
+
+    
+    
+}
+
+.imgYestrellas{
+    display: flex;
+    flex-direction: column;
+   width: 50%;
+   
+  
+}
+
+.calificacion img {
+    max-width: 100%;
+    height: auto;
+   
+  
+               
+
+}
+
+
+.contendoraBOTONES{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  
+}
+
+
+.descripcion {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.precios {
+    font-size: 18px;
+    margin-bottom: 20px;  
+}
+
+.precio-sin-descuento {
+    text-decoration: line-through;
+    color: #2D57A8; 
+}
+
+.agregar-al-carrito,
+.continuar-compra {
+    background-color: #2D57A8;
+    color: #FFFEFE;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;  
+}
+
+.agregar-al-carrito:hover,
+.continuar-compra:hover {
+    background-color: #6D93C9;
+   
+}
+
+/* ingresar el comentario al producto mas la calificasion en estrellas  */
+
+.container {
+    max-width: 80%;
+    height: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  /* ESTILOS DEL FORMULARIO */
+  .user-icon {
+    font-size: 24px;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+   margin-top: 10px;
+
+  }
+  
+  .rating {
+    text-align: center;
+    
+  }
+  
+  .heading {
+    margin-bottom: 10px;
+    
+  }
+  
+  .stars {
+    display: inline-block;
+    font-size: 36px;
+    margin-bottom: 20px;
+   
+  }
+  
+  .star-input {
+    display: none;
+   
+  }
+  
+  .star-label {
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .star-label:hover,
+  .star-input:checked ~ .star-label {
+    color: orange;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin: 12px;
+  
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+    
+   
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    width: 20%;
+    height: 20%;
+  
+  }
+
+  .contenedorCampotexUSER{
+    display: flex;
+   
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+    
+  
+  }
+
+
+/*  sección de graficas de  calificación */
+h2 {
+    text-align: center;
+    margin-top: 0%;
+}
+
+.estrellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  
+}
+
+.estrella {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+   
+    
+}
+
+.cantidad {
+    font-weight: bold;
+}
+
+.barra {
+    background-color: #ccc;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.votos {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+
+/* ESTRELLAS de barra de calificasion */ 
+.clasificacion {
+    display: inline-block;
+    direction: rtl;
+  
+    
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    font-size: 30px; /* Tamaño de las estrellas, ajusta según tu preferencia */
+    color: #F1EE08 ;
+    cursor: pointer;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  /* ver los comentarios con fecha nombre de quien los realiza */
+  .visualizarComentarios {
+    display: flex;
+}
+
+.comentarios {
+    width: 100%;
+    padding: 20px; /* Agregamos un espacio interno para centrar los comentarios en la parte izquierda */
+}
+
+.comentario {
+    display: flex;
+    margin-bottom: 20px;
+ 
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentario img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info-comentario {
+    flex: 1;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    display: flex;
+    flex-direction:row ;
+  
+}
+
+.fecha-publicacion {
+    color: #888;
+    font-size: 12px;
+    display: flex;
+    flex-direction:row ;
+}
+
+.contenido-comentario {
+    margin-top: 10px;
+    display: flex;
+    flex-direction:row ;
+   
+}
+/* estilos para la vercion movil */
+
+@media (max-width: 768px) {
+  /* Modifica aquí los estilos para dispositivos móviles */
+
+  /* Estilos generales para dispositivos móviles */
+  .mainDescripcionProducto {
+      width: 100%;
+      
+  }
+  .conte-descripcion-comentario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  
+  }
+  .imgYestrellas{
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+  
+}
+
+  /* Modifica los estilos del contenedor de las dos secciones principales */
+  .contenedorDosSeccionesPrincipales {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  
+
+  /* Modifica los estilos para los botones de agregar al carrito y continuar compra */
+  .agregar-al-carrito,
+  .continuar-compra {
+      font-size: 16px;
+      padding: 8px 16px;
+      margin-top: 5px;
+  }
+
+
+  /* Modifica los estilos para el botón de enviar comentario */
+  .submit-button {
+     display: flex;
+      font-size: 15px;
+      padding: 8px 16px;
+  }
+
+  /* Modifica los estilos para la sección de gráficas de calificación */
+  .estrella {
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    
+
+  }
+
+  /* Modifica los estilos para la barra de votos en la versión móvil */
+  .votos {
+      font-size: 12px;
+     
+  }
+
+  /* Modifica los estilos para los comentarios en la versión móvil */
+  .comentario {
+      flex-direction:row;
+      align-items: center;
+      padding: 10px;
+  }
+
+  /* Modifica los estilos para la imagen del usuario en el comentario en la versión móvil */
+  .comentario img {
+      width: 40px;
+      height: 40px;
+  }
+
+  /* Modifica los estilos para el nombre de usuario en el comentario en la versión móvil */
+  .info-comentario .nombre-usuario {
+      font-size: 14px;
+  }
+
+  /* Modifica los estilos para la fecha de publicación en el comentario en la versión móvil */
+  .info-comentario .fecha-publicacion {
+      font-size: 10px;
+  }
+
+  /* Modifica los estilos para el contenido del comentario en la versión móvil */
+  .info-comentario .contenido-comentario {
+      font-size: 15px;
+      display: flex;
+  }
+
+  /*  modificasion a las barras donde se muestran las graficas sobre la calificasion de los productos  */
+  .stars {
+    font-size: 20px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.star-label {
+  margin-right: 5px; /* Ajusta el margen entre las estrellas según tus preferencias */
+}
+
+.estrella {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-top: 10px;
+ 
+}
+
+.cantidad {
+  font-weight: bold;
+  margin-top: 5px; /* Espacio entre el texto de calificación y la cantidad de votos */
+ 
+}
+
+.barra {
+  background-color: #ccc;
+  height: 15px; /* Ajusta la altura de la barra según tus preferencias */
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+ 
+}
+
+.votos {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 15px; /* Ajusta el espacio vertical dentro de la barra */
+  padding: 0 5px; /* Ajusta el espacio horizontal dentro de la barra */
+  font-size: 12px; /* Ajusta el tamaño de fuente de la cantidad de votos */
+ 
+}
+
+}
+
+
+

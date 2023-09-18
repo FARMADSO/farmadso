@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/carritoCompras2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Mi carrito</title>
+</head>
+<body>
+    <header class="headerShoppingCart">
+        <div class="logoIcon">
+            <img src="assets/img/logoFarmadsoo.png" alt="">
+        </div>
+        
+
+    </header>
+
+    <nav class="exit">
+        <a  href="product.php">
+            <span class="material-symbols-outlined">
+            arrow_back
+            </span>
+             Carrito
+        </a>
+    </nav>
+
+    <main class="containerShoppingCart">
+        <section class="carts">
+            <article class="product1">
+                <div class="imageProduct">
+                    <img src="assets/img/acetaminofen.png" alt="">
+                </div>
+                <div class="data">
+                    <div>Acetaminofén</div>
+                    <div>
+                        <button class="amount" id="product1-decrease">-</button>
+                        <span>3</span>
+                        <button class="amount" id="product1-decrease">+</button>
+                    </div>
+                    <div>
+                        3000
+                    </div>
+                </div>
+                <div class="dataMobile">
+                    <div>Amoxicilina</div>
+                    <div>
+                        <button class="amount">-</button>
+                        <span>3</span>
+                        <button class="amount">+</button>
+                        <div>
+                            3000
+                        </div>
+                    </div>
+                </div>
+                <div class="delete">
+                    <span id="delete" class="material-symbols-outlined">
+                        delete
+                    </span>
+                </div>
+            </article>
+
+            <article class="product1">
+                <div class="imageProduct">
+                    <img src="assets/img/amoxicilina.png" alt="">
+                </div>
+                <div class="data">
+                    <div>Amoxicilina</div>
+                    <div>
+                        <button class="amount">-</button>
+                        <span>3</span>
+                        <button class="amount">+</button>
+                    </div>
+                    <div>
+                        3000
+                    </div>
+                </div>
+                <div class="dataMobile">
+                    <div>Amoxicilina</div>
+                    <div>
+                        <button class="amount">-</button>
+                        <span>3</span>
+                        <button class="amount">+</button>
+                        <div>
+                            3000
+                        </div>
+                    </div>
+                </div>
+                <div class="delete">
+                    <span id="delete" class="material-symbols-outlined">
+                        delete
+                    </span>
+                </div>
+            </article>
+
+            <article class="product1">
+                <div class="imageProduct">
+                    <img src="assets/img/amoxicilina.png" alt="">
+                </div>
+                <div class="data">
+                    <div>Polombia</div>
+                    <div>
+                        <button class="amount">-</button>
+                        <span>3</span>
+                        <button class="amount">+</button>
+                    </div>
+                    <div>
+                        3000
+                    </div>
+                </div>
+                <div class="dataMobile">
+                    <div>Amoxicilina</div>
+                    <div>
+                        <button class="amount">-</button>
+                        <span>3</span>
+                        <button class="amount">+</button>
+                        <div>
+                            3000
+                        </div>
+                    </div>
+                </div>
+                <div class="delete">
+                    <span id="delete" class="material-symbols-outlined">
+                        delete
+                    </span>
+                </div>
+            </article>
+
+        </section>
+        <label for="">Seleccione el metodo de pago</label>
+        <select id="metodo-pago" name="metodo-pago">
+            <option value="pse">PSE</option>
+            <option value="contraentrega">Contraentrega</option>
+            <option value="paypal">PayPal</option>
+        </select>
+        <hr>
+        <section class="buttons">
+            <button>Vaciar Carrito</button>
+            <a href="pedido.html">Comprar</a>
+        </section>
+    </main>
+    
+
+    <footer></footer>
+
+    <script src="assets/js/funciones-+.js"></script>
+    <script src="assets/js/MenuMovil.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+:root {
+    --azulC: #6D93C9;
+    --blanco: #FFFEFE;
+    --verdeO: #33A892;
+    --verdeC: #B5DDCA;
+    --azulO: #2D57A8;
+}
+
+@media (min-width: 0px) and (max-width: 690px) {
+    .encabezadoPRINCIPAL {
+        height: 8rem;
+        width: 100%;
+        background-color: var(--verdeC);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menuEncabezado{
+        display: none;
+    }
+    .ContenedoBuscador{
+        display: none;
+    }
+    .contenedorImagenPerfil{
+        display: none;
+    }
+    .imagenLogo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .imagenLogo img {
+        width: 7rem;
+        height: 4rem;
+    }
+   
+    .ContenedorBtnMenu{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .botonMenu{
+        width: 3rem;
+        height: 3rem;
+    }
+    .botonMenu img{
+        width: 3rem;
+    }
+    .ContenedorMenuMovil{
+        width: 100%;
+        height: 100%;
+        background-color: var(--verdeC);
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items:center;
+        top: 0;
+        z-index: 1;
+    }
+ 
+    .contenedorImagenPerfilMovil{
+        width: 200px;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenPerfilMovil{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    .imagenPerfilMovil img{
+       width: 100%;
+    }
+    .ContenedoBuscadorMovil{
+        width: 400px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .BuscadorMovil{
+        width: 300px;
+        height: 3rem;
+        text-indent: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border: none;
+        background-color: var(--blanco);
+    }
+    .BotonSearchMovil{
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--azulO);
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .menuEncabezadoMovil{
+        width: 82%;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .BtnInicioMovil{
+        width: 100%;
+        height: 3rem;
+        gap: 20px;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        border-bottom: 1px solid;
+    }
+    .BtnInicioMovil img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .BtnInicioMovil p{
+        color: var(--azulO);
+        font-size: 25px;
+    }
+    .BtnTiendaMovil{
+        width: 100%;
+        height: 3rem;
+        gap: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: start;
+        border-bottom: 1px solid;
+    }
+    .BtnTiendaMovil img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .BtnTiendaMovil p{
+        color: var(--azulO);
+        font-size: 25px;
+    }
+    .BotonCerrar{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 3rem;
+        height: 3rem;
+    }
+    .BotonCerrar img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (min-width: 690px) and (max-width: 890px){
+    .encabezadoPRINCIPAL {
+        height: 8rem;
+        width: 100%;
+        background-color: var(--verdeC);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .imagenLogo {
+        width: 120px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagenLogo img {
+        width: 7rem;
+        height: 4rem;
+    }
+    .ContenedoBuscador{
+        width: 400px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .Buscador{
+        width: 200px;
+        height: 2rem;
+        text-indent: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    .BotonSearch{
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--azulO);
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuEncabezado{
+        width: 300px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+   
+    }
+    .BtnInicio{
+        width: 80px;
+        height: 2rem;
+        gap: 5px;
+        align-items: end;
+        display: flex;
+    }
+    .BtnInicio img{
+        width: 1.5rem;
+        height: 1.5em;
+    }
+    .BtnInicio p{
+        color: var(--azulO);
+        font-size: 16px;
+    }
+    .BtnTienda{
+        width: 100px;
+        height: 2rem;
+        gap: 5px;
+        align-items: end;
+        display: flex;
+    }
+    .BtnTienda img{
+        width: 1.5rem;
+        height: 1.5em;
+    }
+    .BtnTienda p{
+        color: var(--azulO);
+        font-size: 16px;
+    }
+    .contenedorImagenPerfil{
+        width: 200px;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenPerfil{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    .imagenPerfil img{
+       width: 100%;
+    }
+    .ContenedorBtnMenu{
+        display: none;
+    }
+    .ContenedorMenuMovil{
+        display: none;
+    }
+}
+@media (min-width: 890px) and (max-width: 1800px) {
+    .encabezadoPRINCIPAL {
+        height: 8rem;
+        width: 100%;
+        background-color: var(--verdeC);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .imagenLogo {
+        width: 200px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+ 
+    .imagenLogo img {
+        width: 9rem;
+        height: 5rem;
+    }
+    .ContenedoBuscador{
+        width: 400px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .Buscador{
+        width: 300px;
+        height: 2rem;
+        text-indent: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    .BotonSearch{
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--azulO);
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuEncabezado{
+        width: 400px;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .BtnInicio{
+        width: 100px;
+        height: 2rem;
+        gap: 5px;
+        align-items: end;
+        display: flex;
+    }
+    .BtnInicio img{
+        width: 2rem;
+        height: 2em;
+    }
+    .BtnInicio p{
+        color: var(--azulO);
+        font-size: 18px;
+    }
+    .BtnTienda{
+        width: 100px;
+        height: 2rem;
+        gap: 5px;
+        align-items: end;
+        display: flex;
+    }
+    .BtnTienda img{
+        width: 2rem;
+        height: 2em;
+    }
+    .BtnTienda p{
+        color: var(--azulO);
+        font-size: 18px;
+    }
+    .contenedorImagenPerfil{
+        width: 200px;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenPerfil{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    .imagenPerfil img{
+       width: 100%;
+    }
+    .ContenedorBtnMenu{
+        display: none;
+    }
+    .ContenedorMenuMovil{
+        display: none;
+    }
+}

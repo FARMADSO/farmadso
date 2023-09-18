@@ -1,0 +1,447 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.headerShoppingCart{
+    height: 16vh;
+    background-color: #2D57A8;
+}
+
+.exit{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding-left: 2vh;
+    box-shadow: 0px 2px 3px #B5DDCA;
+}
+
+.exit>h2{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    color: #33A892;
+}
+
+.containerShoppingCart{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    gap: 1vh;
+    padding: 2vh;
+}
+
+.carts{
+    height: 70%;
+    overflow: scroll;
+    gap: 1vh;
+}
+
+.product1{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+
+.imageProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border-bottom: 2px solid grey;
+}
+.imageProduct>img{
+    height: 80%;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.data>div{
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 1vh;
+    border-bottom: 2px solid grey ;
+}
+
+.dataMobile{
+    display: none;
+}
+
+.amount{
+    background-color: #33A892;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    font-size: 16px;
+}
+
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border-bottom: 2px solid grey;
+}
+
+#delete{
+    font-size: 5vh;
+    color: #33A892;
+}
+
+select {
+    width: 30vh;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #6D93C9;
+    color: #FFFEFE;
+    border: none;
+    height: 5vh;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:8vh;
+}
+
+.buttons>button{
+    font-size: 2vh;
+    height: 6vh;
+    width: 18vh;
+    border: none;
+    background-color: #33A892;
+    color: #FFFEFE;
+    transition: background-color 0.3s ease;
+}
+
+.buttons>button:hover{
+    background-color: #B5DDCA;
+}
+
+
+footer{
+    height: 13vh;
+    background-color: #2D57A8;
+}
+
+@media screen and (max-width:420px){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .headerShoppingCart{
+        height: 16vh;
+        background-color: #2D57A8;
+    }
+    
+    .exit{
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        padding-left: 2vh;
+        box-shadow: 0px 2px 3px #B5DDCA;
+    }
+    
+    .exit>h2{
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+        color: #33A892;
+    }
+    
+    .containerShoppingCart{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        gap: 1vh;
+        padding: 2vh;
+    }
+    
+    .carts{
+        height: 70%;
+        overflow: scroll;
+        gap: 1vh;
+    }
+    
+    .product1{
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+    }
+    
+    .imageProduct{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        border-bottom: 2px solid grey;
+    }
+    .imageProduct>img{
+        height: 40%;
+    }
+    
+    .data{
+        display: none;
+        flex-direction: row;
+        width: 60%;
+    }
+    
+    .data>div{
+        font-size: 2.5vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 1vh;
+        border-bottom: 2px solid grey ;
+    }
+
+    .dataMobile{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .dataMobile>div{
+        font-size: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 1vh;
+        border-bottom: 2px solid grey ;
+    }
+    
+    .amount{
+        background-color: #33A892;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        height: 3vh;
+        width: 3vh;
+        font-size: 14px;
+    }
+    
+    .delete{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        border-bottom: 2px solid grey;
+    }
+    
+    #delete{
+        font-size: 5vh;
+        color: #33A892;
+    }
+    
+    select {
+        width: 30vh;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #6D93C9;
+        color: #FFFEFE;
+        border: none;
+        height: 5vh;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height:8vh;
+    }
+    
+    .buttons>button{
+        font-size: 2vh;
+        height: 6vh;
+        width: 18vh;
+        border: none;
+        background-color: #33A892;
+        color: #FFFEFE;
+        transition: background-color 0.3s ease;
+    }
+    
+    .buttons>button:hover{
+        background-color: #B5DDCA;
+    }
+    
+    
+    footer{
+        height: 13vh;
+        background-color: #2D57A8;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .headerShoppingCart{
+        height: 16vh;
+        background-color: #2D57A8;
+    }
+    
+    .exit{
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        padding-left: 2vh;
+        box-shadow: 0px 2px 3px #B5DDCA;
+    }
+    
+    .exit>h2{
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+        color: #33A892;
+    }
+    
+    .containerShoppingCart{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        gap: 1vh;
+        padding: 2vh;
+    }
+    
+    .carts{
+        height: 70%;
+        overflow: scroll;
+        gap: 1vh;
+    }
+    
+    .product1{
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+    }
+    
+    .imageProduct{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        border-bottom: 2px solid grey;
+    }
+    .imageProduct>img{
+        height: 50%;
+    }
+    
+    .data{
+        display: none;
+        flex-direction: row;
+        width: 60%;
+    }
+    
+    .data>div{
+        font-size: 2.5vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 1vh;
+        border-bottom: 2px solid grey ;
+    }
+
+    .dataMobile{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .dataMobile>div{
+        font-size: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 1vh;
+        border-bottom: 2px solid grey ;
+    }
+    
+    .amount{
+        background-color: #33A892;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        height: 3vh;
+        width: 3vh;
+        font-size: 14px;
+    }
+    
+    .delete{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        border-bottom: 2px solid grey;
+    }
+    
+    #delete{
+        font-size: 5vh;
+        color: #33A892;
+    }
+    
+    select {
+        width: 30vh;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #6D93C9;
+        color: #FFFEFE;
+        border: none;
+        height: 5vh;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height:8vh;
+    }
+    
+    .buttons>button{
+        font-size: 2vh;
+        height: 6vh;
+        width: 18vh;
+        border: none;
+        background-color: #33A892;
+        color: #FFFEFE;
+        transition: background-color 0.3s ease;
+    }
+    
+    .buttons>button:hover{
+        background-color: #B5DDCA;
+    }
+    
+    
+    footer{
+        height: 13vh;
+        background-color: #2D57A8;
+    }
+}

@@ -1,0 +1,127 @@
+/* styles.css */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  background-color: #b5ddca;
+  padding: 1rem; /* Utiliza unidades relativas */
+  margin-top: 2rem; /* Utiliza unidades relativas */
+  border-radius: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; /* Centra el contenido */
+}
+
+.footer-logo img {
+  max-width: 20%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+  margin-bottom: 1rem; /* Espacio inferior para separar de otros elementos */
+}
+
+.footer-info,
+.footer-contact,
+.footer-subscribe {
+  flex: 1;
+  padding: 1rem; /* Utiliza unidades relativas */
+  max-width: 100%; /* Ajusta el ancho máximo */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  text-align: center; /* Centra el contenido */
+}
+.footer-social{
+  flex: 1;
+  padding: 1rem; /* Utiliza unidades relativas */
+  max-width: 100%; /* Ajusta el ancho máximo */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  text-align: center; /* Centra el contenido */
+   margin-bottom: 80px;
+}
+
+.footer-info h3,
+.footer-contact h3,
+.footer-subscribe h3,
+.footer-social h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0.5rem; /* Espacio inferior para separar de otros elementos */
+  color: #2d57a8;
+}
+
+.footer-subscribe button {
+  width: 100%;
+  padding: 0.5rem; /* Utiliza unidades relativas */
+  margin: 0.5rem 0;
+  background-color: #6d93c9;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fffefe;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #33a892;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+
+.footer-subscribe input[type="email"] {
+  width: 100%;
+  padding: 0.5rem; /* Utiliza unidades relativas */
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  
+}
+
+.footer-social img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.fa-brands {
+  font-size: 2rem; /* Utiliza unidades relativas */
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.fa-facebook,
+.fa-twitter {
+  color: #1057e7;
+}
+
+.fa-instagram´{
+  color: red;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .footer {
+      flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+  }
+
+  .footer-logo img {
+      width: 20%; /* Reduce el ancho de la imagen en pantallas pequeñas */
+      margin-bottom: 0.5rem;
+  }
+
+  .footer-info,
+  .footer-contact,
+  .footer-subscribe {
+      max-width: 100%; /* Ajusta el ancho máximo en pantallas pequeñas */
+      margin: 0.5rem 0;
+  }
+  
+}

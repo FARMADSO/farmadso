@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+.contenido-productos{
+    display: flex;
+    height: calc(100% - 200px);
+}
+
+#menu {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu h2,
+#contenido h2{
+    color: #2D57A8;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+#menu li, a {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+    color: #6D93C9;
+}
+
+
+h2 {
+    font-size: 24px;
+}
+
+#contenido {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+
+
+/* responsive para pc */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    
+    
+    #menu ul{
+        width: 85%;
+        height: 90%;
+    }
+}
+
+/* responsive para moviles  */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+    #menu{
+        display: none;
+    }
+
+    .icono-menu img{
+        width: 50px;
+    }
+
+    .contenido-productos{
+        background-color: antiquewhite;
+        width: 100%;
+    }
+
+    #mobile-menu{
+        background-color: transparent;
+        width: 40%;
+        border: 1px solid green;
+        display: none;
+    }
+
+    .contenedor-lista{
+        border: 1px solid;
+    }
+
+    #mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-color: blueviolet;
+    }
+
+    #mobile-menu li{
+        border: 1px solid;
+        list-style: none;
+    }
+
+    #mobile-menu a{
+        display: flex;
+    }
+
+    #contenido{
+        width: calc(100% - 40%);
+        border: 1px solid blue;
+    }
+
+}
